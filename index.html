@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Futuristic Horror Happening Space - Index</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: url('images/index_bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow-x: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      flex: 1;
+      overflow-y: auto;
+      padding: 60px 20px 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: fadeIn 2s ease-in-out;
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #22f0f0;
+      margin: 0 0 40px 0;
+      animation: floatTitle 8s infinite ease-in-out;
+      text-align: center;
+    }
+
+    @keyframes floatTitle {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    .chapter-columns {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .chapter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 250px;
+      text-align: center;
+    }
+
+    .chapter-group a {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      transition: all 0.4s ease-in-out;
+      color: #aee8ff;
+      padding: 10px 20px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(4px);
+      display: block;
+    }
+
+    .chapter-group a:hover {
+      transform: scale(1.04);
+      background-color: rgba(0, 255, 213, 0.25);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+      text-shadow: 0 0 5px #00fff0;
+    }
+
+    .summary-link {
+      margin-top: 20px;
+    }
+
+    .summary-link a {
+      background: rgba(0, 0, 0, 0.2);
+      padding: 10px 25px;
+      border-radius: 10px;
+      color: #aee8ff;
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+      transition: all 0.4s ease-in-out;
+      text-decoration: none;
+    }
+
+    .summary-link a:hover {
+      transform: scale(1.04);
+      background-color: rgba(0, 255, 213, 0.25);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+      text-shadow: 0 0 5px #00fff0;
+    }
+
+    .footer {
+      width: 100%;
+      font-size: 1.1rem;
+      text-align: center;
+      font-weight: bold;
+      color: #ccc;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 12px 0;
+      z-index: 999;
+      backdrop-filter: blur(5px);
+    }
+
+    .footer .author-label {
+      color: #ffcc00;
+    }
+
+    .footer .author-name {
+      color: #00eaff;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    .footer .author-name:hover {
+      color: #00ffc3;
+      text-shadow: 0 0 8px #00ffc3;
+    }
+
+    .asteroid {
+      position: fixed;
+      top: -50px;
+      width: 20px;
+      height: 20px;
+      background: radial-gradient(circle, #aaa, #333);
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: asteroidMove linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes asteroidMove {
+      0% {
+        transform: translateY(-100px) rotate(0deg) scale(1);
+        opacity: 0;
+      }
+      50% {
+        transform: translateY(50vh) rotate(180deg) scale(1.2);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translateY(110vh) rotate(360deg) scale(1);
+        opacity: 0;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay">
+    <h1>The Futuristic Horror<br>Happening Space</h1>
+    <div class="chapter-columns">
+      <div class="chapter-group">
+        <a href="chapter1.html">Chapter 1<br>Signal from Beyond</a>
+        <a href="chapter2.html">Chapter 2<br>Echoes in the Void</a>
+        <a href="chapter3.html">Chapter 3<br>The Derelict Curse</a>
+        <a href="chapter4.html">Chapter 4<br>Rift of Shadows</a>
+        <a href="chapter5.html">Chapter 5<br>The Fractured AI</a>
+      </div>
+      <div class="chapter-group">
+        <a href="chapter6.html">Chapter 6<br>Reversal</a>
+        <a href="chapter7.html">Chapter 7<br>Thought-Eater</a>
+        <a href="chapter8.html">Chapter 8<br>Dying Stars</a>
+        <a href="chapter9.html">Chapter 9<br>The Helix Drift</a>
+        <a href="chapter10.html">Chapter 10<br>Requiem for the Void</a>
+      </div>
+    </div>
+    <div class="summary-link">
+      <a href="summary.html">→ Read Summary</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="author-label">Created by</span>
+    <span class="author-name"> Pamarthi Sai Bhargav</span> &copy; 2025 — All rights reserved.
+  </div>
+
+  <script>
+    const numAsteroids = 30;
+    for (let i = 0; i < numAsteroids; i++) {
+      const asteroid = document.createElement('div');
+      asteroid.className = 'asteroid';
+      asteroid.style.left = Math.random() * 100 + 'vw';
+      asteroid.style.animationDuration = (Math.random() * 10 + 5) + 's';
+      asteroid.style.width = asteroid.style.height = (Math.random() * 8 + 5) + 'px';
+      asteroid.style.opacity = Math.random() * 0.6 + 0.2;
+      document.body.appendChild(asteroid);
+    }
+  </script>
+</body>
+</html>
